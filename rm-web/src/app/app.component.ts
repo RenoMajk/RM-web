@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { MenuUrl } from './shared/enums';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public readonly MenuUrlEnum = MenuUrl;
   
   siteLanguage = 'English';
   languageList = [

@@ -2,3 +2,12 @@ Tytuł{{'title' | translate}}
 <button (click)="changeSiteLanguage('pl')">Polski</button>
 <button (click)="changeSiteLanguage('en')">English</button>
 <button (click)="changeSiteLanguage('de')">Deutsch</button>
+<button [routerLink]="MenuUrlEnum.HOME">Home</button>
+<button [routerLink]="MenuUrlEnum.CONTACT">Contact</button>
+<div>
+ <mat-slide-toggle>Toggle me!</mat-slide-toggle>   
+</div>
+
+<div class="mx-5 my-4">
+    <router-outlet></router-outlet>
+  </div>
