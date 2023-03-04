@@ -10,16 +10,29 @@ import { HomeComponent } from './entities/home/home.component';
 import { ContactComponent } from './entities/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { OfferComponent } from './entities/offer/offer.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, '/RM-web/assets/i18n/', '.json');
+   return new TranslateHttpLoader(http, '/RM-web/assets/i18n/', '.json');
+  //return new TranslateHttpLoader(http);
 }
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    NavbarComponent,
+    FooterComponent,
+    OfferComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +48,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    MatMenuModule,
+    MatTooltipModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

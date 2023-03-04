@@ -1,0 +1,38 @@
+<mat-toolbar class="d-flex justify-content-between">
+    <div class="d-flex align-items-center">
+      <span class="logo__img" [routerLink]="MenuUrlEnum.HOME" alt="RenoMajk - Wykończenia Wnętrz"></span>
+      <span class="ms-4 logo__name"></span>
+    </div>
+    <div class="d-flex align-items-center me-2">
+      <div class="d-flex me-5">
+        <button mat-button [routerLink]="MenuUrlEnum.HOME">
+            {{ 'home.button' | translate }}
+        </button>
+        <span class="mx-2 divider"></span>
+        <button mat-button [routerLink]="MenuUrlEnum.OFFER">
+            {{ 'offer.button' | translate }}
+        </button>
+        <span class="mx-2 divider"></span>
+        <button mat-button [routerLink]="MenuUrlEnum.CONTACT">
+            {{ 'contact.button' | translate }}
+        </button>
+      </div>
+      <div class="d-flex align-items-center actions">
+        <button mat-icon-button [matMenuTriggerFor]="formsMenu">
+          <span class="logo__lang" [ngClass]="selectedLang.class"></span>
+        </button>
+      </div>
+    </div>
+  </mat-toolbar>
+  
+  <mat-menu #formsMenu="matMenu" xPosition="before">
+    <div *ngFor="let item of languageList;">
+      <button mat-menu-item (click)="changeSiteLanguage(item)">
+        <div class="d-flex align-items-center">
+          <span class="logo__lang" [ngClass]="item.class"></span>
+          <span class="ms-3">{{item.name}}</span>
+        </div>
+      </button>
+    </div>
+  </mat-menu>
+  

@@ -1,0 +1,49 @@
+ @import '../../../assets/variables.scss';
+
+.logo {
+    &__img {
+      cursor: pointer;
+      height: 50px;
+      width: 100px;
+      display: flex;
+      background: url('../../../assets/images/logo.png') no-repeat center center;
+      background-size: cover;
+    }
+
+    &__name {
+        height: 30px;
+        width: 200px;
+        display: flex;
+        background: url('../../../assets/images/name.png') no-repeat center center;
+        background-size: cover;
+      }
+
+    &__lang {
+        height: 15px;
+        width: 25px;
+        display: flex;
+        &--pl{
+          background: url('../../../assets/images/pl.png') no-repeat center center;
+          background-size: cover;
+        }
+        &--en{
+          background: url('../../../assets/images/en.png') no-repeat center center;
+          background-size: cover;
+        }
+        &--de{
+          background: url('../../../assets/images/de.png') no-repeat center center;
+          background-size: cover;
+        }
+      }
+  }
+
+  .mat-toolbar{
+    .mdc-button {
+      color: $white;
+      font-weight: 500;
+    }
+    .mdc-button:hover, .mdc-icon-button:hover {
+      background: $dark-gray;
+    }
+  }
+  

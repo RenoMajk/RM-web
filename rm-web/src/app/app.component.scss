@@ -1,0 +1,11 @@
+@import '../assets/variables.scss';
+
+.content {
+    height: calc(100vh - $navbar-width);
+    background: $light-gray-bg;
+}
+
+.contact-fab {
+    position: fixed;
+    bottom: 25px;
+}
