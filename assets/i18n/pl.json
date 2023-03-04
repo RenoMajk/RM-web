@@ -1,3 +1,11 @@
 {
-    "title": "Polski"
+    "home": {
+        "button": "Strona główna"
+    },
+    "offer": {
+        "button": "Oferta"
+    },
+    "contact": {
+        "button": "Kontakt"
+    }
 }

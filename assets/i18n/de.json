@@ -1,3 +1,11 @@
 {
-    "title": "Niemiecki"
+    "home": {
+        "button": "de Home"
+    },
+    "offer": {
+        "button": "de Offer"
+    },
+    "contact": {
+        "button": "de Contact"
+    }
 }

@@ -1,3 +1,11 @@
 {
-    "title": "Angielski"
+    "home": {
+        "button": "Home"
+    },
+    "offer": {
+        "button": "Offer"
+    },
+    "contact": {
+        "button": "Contact"
+    }
 }
