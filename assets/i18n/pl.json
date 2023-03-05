@@ -6,6 +6,10 @@
         "button": "Oferta"
     },
     "contact": {
-        "button": "Kontakt"
+        "button": "Kontakt",
+        "title": "Skontaktuj się z nami",
+        "phone": "Telefon",
+        "mail": "Email",
+        "social": "Portale społecznościowe"
     }
 }
